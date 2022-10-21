@@ -1,0 +1,82 @@
+/* 
+Code snippets referenced from: 
+- N/A
+*/
+
+/* ========= Services Styling ========= */
+
+#services-container {
+    margin: 0 auto;
+    padding: 10px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.services-bar {
+    background-image: url('../imgs/white-pattern-background.png');
+    background-position: center;
+    background-size: cover;
+    background-color: #F7F7F7;
+
+    text-align: center;
+}
+
+/* For grid alignment */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4px;
+}
+
+.column {
+    flex: 10%;
+    padding: 1px;
+}
+
+.column img {
+    width: 80%;
+    height: auto;
+    vertical-align: middle;
+}
+
+/* For text overlay */
+.container {
+    position: relative;
+    text-align: left;
+    color: #F7F7F7;
+}
+
+.container img:hover {
+    transform: scale(0.98);
+}
+
+.bottom-left {
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    color: #F7F7F7;
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(50, 50, 50, 0.7);
+}
+
+/* @media screen and (min-width: 900px) {
+    .bottom-left {
+        font-size: 16px;
+    }
+    .column {
+        flex: 40%;
+        padding: 1px;
+    }
+} */
+
+@media screen and (max-width: 1100px) {
+    .bottom-left {
+        font-size: 30px;
+    }
+    .column {
+        flex: 100%;
+        padding: 1px;
+    }
+}

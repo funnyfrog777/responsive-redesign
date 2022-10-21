@@ -1,0 +1,87 @@
+/* 
+Code snippets referenced from: 
+- https://www.w3schools.com/howto/howto_css_searchbar.asp
+*/
+
+/* ========= Search Bar Styling ========= */
+
+#search-container {
+    margin: 0 auto;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.search-bar {
+    background-image: url('../imgs/search-banner-background.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-color: #527272;
+
+    text-align: center;
+}
+
+.search-bar input[type=text] {
+    padding: 6px; /* padding for the text within the search bar */
+    width: 70%; /* how wide the search bar is relative to the webpage width */
+    font-size: 24px;
+    border: none;
+    margin-top: 10px;
+}
+
+.search-bar button {
+    padding: 6px 10px;
+    background: #527272;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background: #455F5F;
+}
+
+.tablink {
+    margin: 0 auto;
+    display: inline;
+    font-size: 24px;
+    width: 70%;
+    padding: 20px;
+    border: none;
+    text-align: center;
+}
+
+.activebutton {
+    background-color: #283838 !important; 
+    color: #F7F7F7 !important; 
+}
+
+.inactivebutton {
+    background-color: #F7F7F7 !important; 
+    color: #283838 !important; 
+}
+
+.activebutton:hover {
+    background-color: #3C5454 !important;
+}
+
+.inactivebutton:hover {
+    background-color: #D7D7D7 !important;
+}
+
+/* @media screen and (max-width: 1200px) {
+    .search-bar input[type=text], .search-bar button {
+        font-size: 18px;
+    }
+} 
+*/
+
+@media screen and (max-width: 1100px) {
+    .search-bar input[type=text] {
+        width: 80%;
+        font-size: 40px;
+    }
+    .search-bar button {
+        font-size: 40px;
+    }
+}

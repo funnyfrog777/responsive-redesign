@@ -1,0 +1,71 @@
+/* 
+Code snippets referenced from: 
+- https://codepen.io/anon/pen/GJWOBV (for navigation bar)
+- https://www.w3schools.com/css/css_navbar.asp (for hover effect)
+- https://www.w3schools.com/howto/howto_js_topnav_responsive.asp (responsive effect)
+
+Flex Display Resource: https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+/* ========= Navigation Bar Styling ========= */
+#navigation-container {
+    margin: 0 auto;
+    height: 70px;
+}
+
+.navigation-bar {
+    background-color: #283838;
+    height: 70px;
+    width: 100%;
+}
+
+.navigation-bar img {
+    float: left;
+    height: 90%;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+
+.navigation-bar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.navigation-bar li {
+    list-style-type: none;
+    display: inline;
+}
+
+.navigation-bar li a {
+    color: #F7F7F7;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 20px 30px;
+}
+
+.navigation-bar li a:hover {
+    background-color: #3C5454;
+}
+
+/* Make navigation bar responsive by turning into a menu when display is sufficiently small */
+.navigation-bar .icon {
+    display: none;
+}
+
+@media screen and (max-width: 1100px) {
+    .navigation-bar li a {
+        display: none;
+    }
+    .navigation-bar .icon, .navigation-bar ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 36px;
+    }
+    #navigation-container, .navigation-bar {
+        height: 120px;
+    }
+}

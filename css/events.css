@@ -1,0 +1,97 @@
+/* 
+Code snippets referenced from: 
+- N/A
+*/
+
+/* ========= Events Styling ========= */
+
+#events-container {
+    margin: 0 auto;
+    padding: 10px;
+    padding-bottom: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.events {
+    background-image: url('../imgs/white-pattern-background.png');
+    background-position: center;
+    background-size: cover;
+    background-color: #F7F7F7;
+
+    text-align: center;
+}
+
+.events button {
+    padding: 10px 20px;
+    background: #527272;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.events button:hover {
+    background: #455F5F;
+}
+
+.top-left {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #283838;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #F7F7F7;
+}
+
+.caption {
+    position: absolute;
+    color: #283838;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    text-align: left;
+}
+
+.eventstablink {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    display: inline;
+    font-size: 24px;
+    width: 70%;
+    padding: 20px;
+    border: none;
+    text-align: center;
+    width: 18%; 
+}
+
+.activebutton2 {
+    background-color: #283838 !important; 
+    color: #F7F7F7 !important; 
+    width: 18%; 
+    margin-bottom: 20px;
+}
+
+.inactivebutton2 {
+    background-color: #F7F7F7 !important; 
+    color: #283838 !important; 
+    width: 18%; 
+    margin-bottom: 20px;
+}
+
+.activebutton2:hover {
+    background-color: #3C5454 !important;
+}
+
+.inactivebutton2:hover {
+    background-color: #D7D7D7 !important;
+}
+
+@media screen and (max-width: 1100px) {
+    .activebutton2, .inactivebutton2 {
+        width: 14%;
+    }
+}

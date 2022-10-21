@@ -1,0 +1,19 @@
+/* 
+Code snippets referenced from: 
+- N/A
+*/
+
+/* ========= Footer Styling ========= */
+
+#footer-container {
+    margin: 0 auto;
+    padding: 60px;
+    display: flex;
+}
+
+.footer {
+    background-image: url('../imgs/green-pattern-background.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-color: #283838; /* Colors shows if image fails to load */
+}
